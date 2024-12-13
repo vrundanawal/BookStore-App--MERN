@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
+  //Add shadow to navbar when scrooling down otherwise remove shadow from navbar useing useState and useEffect
+  const [hasScrollShadow, setHasScrollShadow] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setHasScrollShadow(true);
+      } else {
+        setHasScrollShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   //create a variable to store navItems and resuse it.
   const navItems = (
     <>
@@ -20,8 +34,14 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 right-0 left-0">
-        <div className="navbar bg-base-100">
+      <div
+        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 right-0 left-0 ${
+          hasScrollShadow
+            ? 'sticky-navbar shadow-md bg-base-100 duration-300 transition-all ease-in-out'
+            : ''
+        }`}
+      >
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <div
