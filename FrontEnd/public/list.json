@@ -5,7 +5,7 @@
         "title": "A Fascinating literacher Book",
         "price": 0,
         "category": "Free",
-        "image": "https://img.freepik.com/premium-vector/hand-drawn-literature-illustration_23-2149263478.jpg?ga=GA1.1.1754044065.1719836996&semt=ais_hybrid"
+        "image": "https://img.freepik.com/free-vector/hand-drawn-world-book-day-illustration-with-stack-books_23-2148868267.jpg?ga=GA1.1.1754044065.1719836996&semt=ais_hybrid"
     },
     {
         "id": 2,
@@ -38,6 +38,57 @@
         "price": 0,
         "category": "Science",
         "image": "https://media.istockphoto.com/id/2176701296/photo/books-in-a-row-on-shelf.jpg?s=612x612&w=0&k=20&c=1Nu9TtuE_qJSjM6NJiOb-lfUq31J_fQlUca3Qj7Tmh4="
+    },
+    {
+        "id": 6,
+        "name": "Science Book",
+        "title": "A Fascinating Science Book",
+        "price": 0,
+        "category": "Free",
+        "image": "https://media.istockphoto.com/id/2176701296/photo/books-in-a-row-on-shelf.jpg?s=612x612&w=0&k=20&c=1Nu9TtuE_qJSjM6NJiOb-lfUq31J_fQlUca3Qj7Tmh4="
+    },
+    {
+        "id": 7,
+        "name": "Science Book",
+        "title": "A Fascinating Science Book",
+        "price": 0,
+        "category": "Free",
+        "image": "https://media.istockphoto.com/id/2176701296/photo/books-in-a-row-on-shelf.jpg?s=612x612&w=0&k=20&c=1Nu9TtuE_qJSjM6NJiOb-lfUq31J_fQlUca3Qj7Tmh4="
+    },
+    {
+        "id": 8,
+        "name": "Science Book",
+        "title": "A Fascinating Science Book",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-psd/square-book-mockup_1332-60622.jpg?ga=GA1.1.1754044065.1719836996&semt=ais_hybrid"
+    },
+    {
+        "id": 9,
+        "name": "Science Book",
+        "title": "A Fascinating Science Book",
+        "price": 0,
+        "category": "Science",
+        "image": "https://media.istockphoto.com/id/2176701296/photo/books-in-a-row-on-shelf.jpg?s=612x612&w=0&k=20&c=1Nu9TtuE_qJSjM6NJiOb-lfUq31J_fQlUca3Qj7Tmh4="  },     
+    {
+        "id": 10,
+        "name": "Science Book",
+        "title": "A Fascinating Science Book",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/watercolor-world-book-day-illustration_52683-59257.jpg?ga=GA1.1.1754044065.1719836996&semt=ais_hybrid"
+    },
+    {
+        "id": 11,
+        "name": "Literachure Book",
+        "title": "A Fascinating literacher Book",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/premium-vector/hand-drawn-literature-illustration_23-2149263478.jpg?ga=GA1.1.1754044065.1719836996&semt=ais_hybrid"
     }
+
+
+
+
 
 ]
