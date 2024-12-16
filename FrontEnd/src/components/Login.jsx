@@ -1,13 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
   return (
     <>
       <div>
         <dialog id="my_modal_3" className="modal">
           <div className="modal-box dark:bg-slate-900 dark:text-white">
-            <form method="dialog">
+            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               <Link
                 to="/"
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -24,6 +32,7 @@ const Login = () => {
                   type="email"
                   placeholder="Enter your email"
                   className="w-80 px-3 py-1 border rounded-md outline-none"
+                  {...register('email', { required: true })}
                 />
                 <br />
 
@@ -39,6 +48,7 @@ const Login = () => {
                   type="password"
                   placeholder="Enter your password"
                   className="w-80 px-3 py-1 border rounded-md outline-none"
+                  {...register('password', { required: true })}
                 />
                 <br />
 
