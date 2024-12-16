@@ -67,7 +67,7 @@ const Signup = () => {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
-                <p className="text-xl">
+                <div className="text-xl">
                   Have account?{' '}
                   <button
                     className="underline text-blue-500 cursor-pointer"
@@ -78,7 +78,7 @@ const Signup = () => {
                     Login
                   </button>{' '}
                   <Login />
-                </p>
+                </div>
               </div>
             </form>
           </div>

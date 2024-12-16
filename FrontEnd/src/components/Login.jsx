@@ -7,10 +7,13 @@ const Login = () => {
       <div>
         <dialog id="my_modal_3" className="modal">
           <div className="modal-box">
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <div method="dialog">
+              <Link
+                to="/"
+                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
                 ✕
-              </button>
+              </Link>
               <h3 className="font-bold text-lg">Login</h3>
               {/* Email */}
               <div className="mt-4 space-y-2">
@@ -48,17 +51,21 @@ const Login = () => {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Login
                 </button>
-                <p>
+                <div>
                   Not registered?
                   <Link
                     to="/signup"
-                    className="underline text-blue-500 cursor-pointer"
+                    className="underline text-blue-500 cursor-pointer px-2"
+                    onClick={() => {
+                      document.getElementById('my_modal_3').close();
+                      document.getElementById('my_modal_2').showModal();
+                    }}
                   >
                     Signup
                   </Link>
-                </p>
+                </div>
               </div>
-            </form>
+            </div>
           </div>
         </dialog>
       </div>
