@@ -6,7 +6,7 @@ const Login = () => {
     <>
       <div>
         <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
+          <div className="modal-box dark:bg-slate-900 dark:text-white">
             <form method="dialog">
               <Link
                 to="/"
