@@ -8,7 +8,7 @@ const Signup = () => {
       <div className="flex h-screen items-center justify-center">
         <div className=" w-[600px] ">
           <div className="modal-box">
-            <form method="dialog">
+            <div method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
@@ -80,7 +80,7 @@ const Signup = () => {
                   <Login />
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

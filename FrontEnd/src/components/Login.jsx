@@ -7,10 +7,11 @@ const Login = () => {
       <div>
         <dialog id="my_modal_3" className="modal">
           <div className="modal-box">
-            <div method="dialog">
+            <form method="dialog">
               <Link
                 to="/"
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                onClick={() => document.getElementById('my_modal_3').close()}
               >
                 ✕
               </Link>
@@ -56,16 +57,12 @@ const Login = () => {
                   <Link
                     to="/signup"
                     className="underline text-blue-500 cursor-pointer px-2"
-                    onClick={() => {
-                      document.getElementById('my_modal_3').close();
-                      document.getElementById('my_modal_2').showModal();
-                    }}
                   >
                     Signup
                   </Link>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </dialog>
       </div>
