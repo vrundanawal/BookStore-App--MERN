@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Cards = ({ book }) => {
-  console.log(book);
   return (
     <>
       <div className="mt-4 my-3 p-3">
@@ -10,10 +9,10 @@ const Cards = ({ book }) => {
             <img
               src={book.image}
               alt="Shoes"
-              className="max-w-[300px] h-[300px]"
+              className="h-80 w-full object-cover"
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body ">
             <h2 className="card-title">
               {book.name}
               <div className="badge badge-secondary">{book.category}</div>

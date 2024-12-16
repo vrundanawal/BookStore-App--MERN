@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Music Book",
+        "name": "New Music Book",
         "title": "A Fascinating Music Book",
         "price": 0,
         "category": "Music",
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "name": "Comedy Book",
-        "title": "A Comedy Story Book",
+        "title": "A Comedy Story Book for you",
         "price": 0,
         "category": "Comedy",
         "image": "https://media.istockphoto.com/id/2174258112/photo/vintage-books.jpg?s=612x612&w=0&k=20&c=4oalxmyYrNgCzxGiVRQULVEwiaetJ4xPdc0OIY1jiBU="
