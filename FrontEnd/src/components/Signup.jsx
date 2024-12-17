@@ -89,7 +89,7 @@ const Signup = () => {
                   className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200"
                   onClick={handleSubmit(onSubmit)}
                 >
-                  Signup---
+                  Signup
                 </button>
                 <div className="text-xl">
                   Have account?{' '}
