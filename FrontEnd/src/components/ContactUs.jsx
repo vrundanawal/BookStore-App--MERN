@@ -18,7 +18,7 @@ const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-16 min-h-screen bg-white dark:bg-gray-900 mb-8">
+      <div className="pt-16 bg-white dark:bg-gray-900 mb-12">
         <div className="max-w-screen-lg container mx-auto md:px-20 px-4">
           <div className="mt-12 items-center justify-center text-center">
             <h2 className="text-2xl md:text-4xl font-bold text-blue-700 dark:text-white">
