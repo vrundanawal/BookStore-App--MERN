@@ -25,7 +25,7 @@ const ContactUs = () => {
               Contact Us
             </h2>
             <form
-              className="mt-12 space-y-4 max-w-lg mx-auto shadow-lg p-6 bg-slate-100 dark:bg-gray-700 rounded-lg"
+              className="mt-12 space-y-4 max-w-lg mx-auto shadow-lg p-6 bg-slate-200 dark:bg-gray-700 rounded-lg"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div className="form-control">
