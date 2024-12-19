@@ -26,3 +26,28 @@ export const signup = async (req, res) => {
     res.status(500).json(error || { message: 'Internal Server Error' });
   }
 };
+
+export const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    //check user with email exists
+    const user = await User.findOne({ email });
+
+    //compare password
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!user || !isMatch) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+    res.status(200).json({
+      message: 'User logged in successfully',
+      user: {
+        id: user._id,
+        fullname: user.fullname,
+        email: user.email,
+      },
+    });
+  } catch (error) {
+    console.log('Error : ', error);
+    res.status(500).json(error || { message: 'Internal Server Error' });
+  }
+};
