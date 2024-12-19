@@ -8,7 +8,7 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 const URI = process.env.MongoDBURI;
 
-//connect to MongoDB with hadling try catch block
+//connect to MongoDB with handling try catch block
 try {
   mongoose.connect(URI, {
     useNewUrlParser: true,
