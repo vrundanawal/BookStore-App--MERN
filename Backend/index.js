@@ -2,6 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
+//import the routes and store into a variable
+import bookRoutes from './route/book.route.js';
+
 const app = express();
 
 dotenv.config();
@@ -22,6 +25,9 @@ try {
 app.get('/', (req, res) => {
   res.send('Hello World***!');
 });
+
+//use the routes
+app.use('/books', bookRoutes);
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
