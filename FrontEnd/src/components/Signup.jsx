@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 import Login from './Login';
 
 const Signup = () => {
@@ -9,7 +10,25 @@ const Signup = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = async (data) => {
+    const { fullname, email, password } = data;
+    const userInfo = { fullname, email, password };
+    console.log(userInfo.email + ' is submitted');
+
+    await axios
+      .post('http://localhost:4001/user/signup', userInfo)
+      .then((response) => {
+        //const data = response.data;
+        console.log(response.data);
+        if (response) {
+          alert('User created successfully');
+        }
+      })
+      .catch((error) => {
+        console.log('Error : ', error);
+      });
+  };
 
   const openLoginModal = () => {
     // document.getElementById('background').classList.add('blur-background');
@@ -38,10 +57,10 @@ const Signup = () => {
                   type="text"
                   placeholder="Enter your fullname"
                   className="w-80 px-3 py-1 border rounded-md outline-none"
-                  {...register('name', { required: true })}
+                  {...register('fullname', { required: true })}
                 />
                 <br />
-                {errors.name && (
+                {errors.fullname && (
                   <span className="text-sm text-red-500">
                     This field is required
                   </span>
